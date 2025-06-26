@@ -1,8 +1,14 @@
-name: first workflow
-on: push 
-jobs: 
-  build: 
+name: first-workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  push-main:
     runs-on: ubuntu-latest
     steps:
-      - name: build
-        run: echo " build is done "
+      - name: Run on Push to Specific Branch
+        run: echo "Pushed to main branch!"
+
