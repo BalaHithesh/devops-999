@@ -1,8 +1,8 @@
 name: first workflow
-  on: push 
+on: push 
 jobs: 
   runs-on-push: 
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 steps:
   - name: run on push 
     run: echo " Push happend to this barnch "
