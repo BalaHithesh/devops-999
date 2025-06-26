@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: build
-        run: echo " Push happend to this barnch "
+        run: echo " build is done "
